@@ -46,18 +46,18 @@ build_path=${project_path}/build
 exportOptionsPlistPath=${project_path}/exportDebug.plist
 
 #导出.ipa文件所在路径
-output_path=/Users/hhly/Desktop
-exportIpaPath=${output_path}/${development_mode}
+exportIpaPath=${build_path}/${development_mode}
 
 
 #读取plist文件获取指定参数
-appInfoPlistPath=${project_path}/${scheme_name}/info.plist
+appInfoPlistPath=${project_path}/${scheme_name}/Info.plist
+echo 'info--'${appInfoPlistPath}
 bundleShortVersion=$(/usr/libexec/PlistBuddy -c "print CFBundleShortVersionString" ${appInfoPlistPath})
 bundleVersion=$(/usr/libexec/PlistBuddy -c "print CFBundleVersion" ${appInfoPlistPath})
 ipaFullName=iOS_V${bundleShortVersion}_${bundleVersion}_AppStore_$(date +"%Y%m%d")_$(date +"%H%M")_${pakege_mode}
 
 
-echo''
+echo ''
 echo '///-----------'
 echo '/// 正在清理工程'
 echo '///-----------'
@@ -76,7 +76,7 @@ archive -workspace ${project_path}/${project_name}.xcworkspace \
 -archivePath ${build_path}/${project_name}.xcarchive  -quiet  || exit
 
 
-echo''
+echo ''
 echo '///----------'
 echo '/// 开始ipa打包'${ipaFullName}
 echo '///----------'
@@ -107,80 +107,6 @@ echo '/// ipa包导出失败 '
 echo '///-------------'
 fi
 
-echo''
-echo '///-------------'
-echo '/// 开始发布ipa包'
-echo '///-------------'
-
-if [ $number == 1 ];then
-echo''
-echo '///-------------'
-echo '/// 开始上传App Store'
-echo '///-------------'
-#验证并上传到App Store
-# 将-u 后面的XXX替换成自己的AppleID的账号，-p后面的XXX替换成自己的密码
-altoolPath="/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool"
-"$altoolPath" --validate-app -f ${exportIpaPath}/${ipaFullName}.ipa -u XXX -p XXX -t ios --output-format xml
-"$altoolPath" --upload-app -f ${exportIpaPath}/${ipaFullName}.ipa -u  XXX -p XXX -t ios --output-format xml
-else
-
-
-
-echo''
-#echo '///-------------'
-#echo '/// 开始上传 fir' $exportIpaPath/$ipaFullName.ipa
-#echo '///-------------'
-##上传到Fir  - 将XXX替换成自己的Fir平台的token
-#export LANG="en_US.UTF-8"
-#fir login -T ab1a7d28504bb1d63f9365603833fdba # 5b2810e5544fa810661d4adf2683f6fd # ab1a7d28504bb1d63f9365603833fdba
-#fir publish $exportIpaPath/$ipaFullName.ipa -Q -V -c ${project_path}/log.txt
-
-fi
-
-
-
-
-set from=ouyxc1145@2ncai.com smtp=mx.2ncai.com
-set smtp-auth-user=ouyxc1145 smtp-auth-password=Pass2010 smtp-auth=login
-
-
-
-##svn 地址
-#svnGoal=http://ouyangxiongchun@192.168.74.7:8888/Lotto/03Release/Mobile%20-%20iOS/$(date +"%Y%m")/$ipaFullName.ipa
-#if [ $number == 2 ];then
-#svnGoal=http://ouyangxiongchun@192.168.74.7:8888/Lotto/04Baseline/Mobile%20-%20iOS/v${bundleShortVersion}/$ipaFullName.ipa
-#fi
-#
-#echo''
-#echo '///-------------'
-#echo '/// 上传SVN'
-#echo 'from' $exportIpaPath/$ipaFullName.ipa
-#echo 'to' $svnGoal
-#echo '///-------------'
-#
-##更新到svn
-##svn import $exportIpaPath/$ipaFullName.ipa $svnGoal -F ${project_path}/log.txt
-#svn import $exportIpaPath/$ipaFullName.ipa $svnGoal --username=ouyangxiongchun --password=ouyangxiongchun -F ${project_path}/log.txt
-
-
-
-
-
-
-echo''
-echo '///-------------'
-echo '/// 开始发邮件'
-echo '///-------------'
-#发邮件
-sendEmail -v -f ouyxc1145@2ncai.com -t ouyxc1145@2ncai.com -s mx.2ncai.com:587 -xu ouyxc1145 -xp Pass2010 -u "test" -m "sendemail" -o tls=yes message-charset=utf-8
-#echo 'ouyang' |  mail -v -s "mail test oyxc"  ouyxc1145@2ncai.com
-
-
-
-
-
-#打包zip
-#zip -r olinone.ipa Payload
 
 #输出总用时
 echo "===Finished. Total time: ${SECONDS}s==="
@@ -190,8 +116,6 @@ echo''
 echo '///-------------'
 echo '/// 任务完成'
 echo '///-------------'
-#通知
-osascript -e 'display notification "打包成功！" with title "任务完成"'
 
 exit 0
 
