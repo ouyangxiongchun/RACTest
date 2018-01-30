@@ -3,18 +3,7 @@
 #计时
 SECONDS=0
 
-#输入包类型
-echo "Place enter the number you want to export ? [ 0:ad-hoc 1:app-store 2:Debug] "
-
-##
-read number
-while([[ $number != 0 ]] && [[ $number != 1 ]] && [[ $number != 2 ]])
-do
-echo "Error! Should enter 0、1 or 2"
-echo "Place enter the number you want to export ? [ 0:ad-hoc 1:app-store 2:Debug] "
-read number
-done
-
+number=2
 
 #工程名 将XXX替换成自己的工程名
 project_name=RACTest
