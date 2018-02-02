@@ -116,9 +116,9 @@ echo '///----------'
 
 if [ -e $exportIpaPath/$ipaFullName.ipa ]; then
 echo''
-echo '///----------'
-echo '/// ipa包已导出'
-echo '///----------'
+echo '///-------------'
+echo '/// ipa包导出成功'
+echo '///-------------'
 open $exportIpaPath
 else
 echo''
@@ -127,6 +127,12 @@ echo '/// ipa包导出失败 '
 echo '///-------------'
 fi
 
+
+#打包zip
+#zip -r olinone.ipa Payload
+
+#通知
+osascript -e 'display notification "打包成功！" with title "任务完成"'
 
 #输出总用时
 echo "===Finished. Total time: ${SECONDS}s==="
