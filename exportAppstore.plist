@@ -8,5 +8,10 @@
 	<true/>
 	<key>uploadSymbols</key>
 	<true/>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>cp.yc.com</key>
+		<string>2ncai_pro_appStore</string>
+	</dict>
 </dict>
 </plist>

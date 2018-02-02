@@ -6,5 +6,12 @@
 	<string>development</string>
 	<key>compileBitcode</key>
 	<false/>
+	<key>uploadSymbols</key>
+	<false/>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>cp.yc.com</key>
+		<string>2ncai_pro_dev</string>
+	</dict>
 </dict>
 </plist>
