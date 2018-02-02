@@ -5,6 +5,29 @@ SECONDS=0
 
 number=0
 
+count="$#";
+echo 'count=' $count
+
+if [ $count == 0 ];then
+echo "Error! Should enter 0 or 1"
+echo "Place enter the number you want to export ? [ 0:ad-hoc 1:Debug] "
+echo "Please try again"
+exit 0
+fi
+
+echo "-- \$* 演示 ---"
+for i in "$*"; do
+number=$i
+done
+
+if [[ $number != 0 && $number != 1 ]];then
+echo "Error! Should enter 0 or 1"
+echo "Place enter the number you want to export ? [ 0:ad-hoc 1:Debug] "
+echo "Please try again"
+exit 0
+fi
+
+
 #工程名 将XXX替换成自己的工程名
 project_name=YiCai
 
