@@ -29,10 +29,10 @@ fi
 
 
 #工程名 将XXX替换成自己的工程名
-project_name=YiCai
+project_name=RACTest
 
 #scheme名 将XXX替换成自己的sheme名
-scheme_name=YiCai
+scheme_name=RACTest
 
 #工程绝对路径
 project_path=$(cd `dirname $0`; pwd)
