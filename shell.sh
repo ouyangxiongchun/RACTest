@@ -126,6 +126,8 @@ echo '/// ipa包导出失败 '
 echo '///-------------'
 fi
 
+#清除文件
+rm -f ${exportIpaPath}
 
 #打包zip
 #zip -r olinone.ipa Payload
