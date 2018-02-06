@@ -92,7 +92,8 @@ xcodebuild \
 archive -workspace ${project_path}/${project_name}.xcworkspace \
 -scheme ${scheme_name} \
 -configuration ${development_mode} \
--archivePath ${build_path}/${project_name}.xcarchive  -quiet  || exit
+-archivePath ${build_path}/${project_name}.xcarchive
+#-quiet  || exit
 
 
 echo ''
