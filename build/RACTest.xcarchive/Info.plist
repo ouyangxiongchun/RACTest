@@ -13,12 +13,12 @@
 		<key>CFBundleVersion</key>
 		<string>20171214</string>
 		<key>SigningIdentity</key>
-		<string>iPhone Developer: wu linjian (RX3U8939YW)</string>
+		<string>(unavailable)</string>
 	</dict>
 	<key>ArchiveVersion</key>
 	<integer>2</integer>
 	<key>CreationDate</key>
-	<date>2018-01-25T07:00:52Z</date>
+	<date>2018-02-06T07:44:01Z</date>
 	<key>Name</key>
 	<string>RACTest</string>
 	<key>SchemeName</key>

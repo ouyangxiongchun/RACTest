@@ -1,0 +1,125 @@
+2018-02-06 07:44:02 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7ffb8a066e10; archive(resolved)='<IDEArchive: 0x7ffb89cd53e0>', distributionTask(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team(resolved)='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	Chain (11, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7ffb8a066e10; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	<IDEDistributionProcessingPipelineContext: 0x7ffb8a05eb70; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	<IDEDistributionContext: 0x7ffb8a058a40; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	<IDEDistributionContext: 0x7ffb8a02cc80; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	<IDEDistributionContext: 0x7ffb8a05ff20; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	<IDEDistributionContext: 0x7ffb8a049f10; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	<IDEDistributionContext: 0x7ffb8a0377b0; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	<IDEDistributionContext: 0x7ffb8a03b360; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	<IDEDistributionContext: 0x7ffb8a014a70; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='<IDEProvisioningBasicTeam 0x7ffb8a067790: teamID: 327V29B52H, teamName: Shenzhen YiCai Technology Co., Ltd.>'>
+	<IDEDistributionContext: 0x7ffb89d2ea80; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='<IDEDistributionMethodDevelopmentSigned: 0x7ffb89af87d0>', team='(null)'>
+	<IDEDistributionContext: 0x7ffb89cc8390; archive = '<IDEArchive: 0x7ffb89cd53e0>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7ffb8a066e10>
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionCopyItemStep
+2018-02-06 07:44:02 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/hhly/RACTest/build/RACTest.xcarchive/Products/Applications/RACTest.app' '/var/folders/0w/qw120fzx2wjfnr04jd0tj6v800003f/T/XcodeDistPipeline.nBe/Root/Payload/RACTest.app'
+2018-02-06 07:44:02 +0000  >>> Copying /Users/hhly/RACTest/build/RACTest.xcarchive/Products/Applications/RACTest.app 
+2018-02-06 07:44:02 +0000  copying file ./_CodeSignature/CodeResources ... 
+2018-02-06 07:44:02 +0000  5133 bytes for ./_CodeSignature/CodeResources
+2018-02-06 07:44:02 +0000  copying file ./archived-expanded-entitlements.xcent ... 
+356 bytes for ./archived-expanded-entitlements.xcent
+2018-02-06 07:44:02 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2018-02-06 07:44:02 +0000  1793 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2018-02-06 07:44:02 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2018-02-06 07:44:02 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2018-02-06 07:44:02 +0000  3997 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2018-02-06 07:44:02 +0000  258 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+copying file ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2018-02-06 07:44:02 +0000  916 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+copying file ./embedded.mobileprovision ... 
+2018-02-06 07:44:02 +0000  12341 bytes for ./embedded.mobileprovision
+2018-02-06 07:44:02 +0000  copying file ./Info.plist ... 
+2018-02-06 07:44:02 +0000  1135 bytes for ./Info.plist
+copying file ./PkgInfo ... 
+2018-02-06 07:44:02 +0000  8 bytes for ./PkgInfo
+copying file ./RACTest ... 
+2018-02-06 07:44:02 +0000  5411648 bytes for ./RACTest
+2018-02-06 07:44:02 +0000  2018-02-06 07:44:02 +0000 [MT] /usr/bin/ditto exited with 0
+
+2018-02-06 07:44:02 +0000  
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
+2018-02-06 07:44:02 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionCompileBitcodeStep
+2018-02-06 07:44:02 +0000 [MT] Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionCodeSlimmingStep
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionCopyBCSymbolMapsStep
+2018-02-06 07:44:02 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionSymbolsStep
+2018-02-06 07:44:02 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionAppThinningStep
+2018-02-06 07:44:02 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionODRStep
+2018-02-06 07:44:02 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
+2018-02-06 07:44:02 +0000 [MT] Running /usr/bin/xattr '-cr' '/var/folders/0w/qw120fzx2wjfnr04jd0tj6v800003f/T/XcodeDistPipeline.nBe/Root/Payload/RACTest.app'
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000 [MT] /usr/bin/xattr exited with 0
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000  2018-02-06 07:44:04 +0000 [MT] Processing step: IDEDistributionCodesignStep
+
+2018-02-06 07:44:04 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ffb8a064a60 'cp.yc.com' '<DVTFilePath:0x7ffb89c05d60:'/Users/hhly/RACTest/build/RACTest.xcarchive/Products/Applications/RACTest.app'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffb89ddcae0>: {
+}
+2018-02-06 07:44:04 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ffb8a064a60 'cp.yc.com' '<DVTFilePath:0x7ffb89c05d60:'/Users/hhly/RACTest/build/RACTest.xcarchive/Products/Applications/RACTest.app'>'>: {
+    "application-identifier" = "327V29B52H.cp.yc.com";
+    "com.apple.developer.team-identifier" = 327V29B52H;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "327V29B52H.cp.yc.com"
+    );
+}
+2018-02-06 07:44:04 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ffb8a064a60 'cp.yc.com' '<DVTFilePath:0x7ffb89c05d60:'/Users/hhly/RACTest/build/RACTest.xcarchive/Products/Applications/RACTest.app'>'> to: /var/folders/0w/qw120fzx2wjfnr04jd0tj6v800003f/T/XcodeDistPipeline.nBe/entitlementsiBueCP
+2018-02-06 07:44:04 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '14A8C647795378E5E38A0EC491CED94E0C89B366' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/0w/qw120fzx2wjfnr04jd0tj6v800003f/T/XcodeDistPipeline.nBe/entitlementsiBueCP' '/var/folders/0w/qw120fzx2wjfnr04jd0tj6v800003f/T/XcodeDistPipeline.nBe/Root/Payload/RACTest.app'
+2018-02-06 07:44:04 +0000  Warning: unable to build chain to self-signed root for signer "iPhone Developer: wu linjian (RX3U8939YW)"
+2018-02-06 07:44:04 +0000  Warning: unable to build chain to self-signed root for signer "iPhone Developer: wu linjian (RX3U8939YW)"
+2018-02-06 07:44:04 +0000  /var/folders/0w/qw120fzx2wjfnr04jd0tj6v800003f/T/XcodeDistPipeline.nBe/Root/Payload/RACTest.app: signed app bundle with Mach-O universal (armv7 arm64) [cp.yc.com]
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000  2018-02-06 07:44:04 +0000  
+
+2018-02-06 07:44:04 +0000 [MT] /usr/bin/codesign exited with 02018-02-06 07:44:04 +0000  
+
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000 [MT] Processing step: IDEDistributionStreamingZipItemStep
+2018-02-06 07:44:04 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-02-06 07:44:04 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
+2018-02-06 07:44:04 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/0w/qw120fzx2wjfnr04jd0tj6v800003f/T/XcodeDistPipeline.nBe/Root' '/var/folders/0w/qw120fzx2wjfnr04jd0tj6v800003f/T/XcodeDistPipeline.nBe/Packages/RACTest.ipa'
+2018-02-06 07:44:04 +0000  >>> Copying /var/folders/0w/qw120fzx2wjfnr04jd0tj6v800003f/T/XcodeDistPipeline.nBe/Root 
+2018-02-06 07:44:04 +0000  copying file ./Payload/RACTest.app/_CodeSignature/CodeResources ... 
+2018-02-06 07:44:04 +0000  5133 bytes for ./Payload/RACTest.app/_CodeSignature/CodeResources
+2018-02-06 07:44:04 +0000  copying file ./Payload/RACTest.app/archived-expanded-entitlements.xcent ... 
+356 bytes for ./Payload/RACTest.app/archived-expanded-entitlements.xcent
+copying file ./Payload/RACTest.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2018-02-06 07:44:04 +0000  1793 bytes for ./Payload/RACTest.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Payload/RACTest.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2018-02-06 07:44:04 +0000  258 bytes for ./Payload/RACTest.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/RACTest.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2018-02-06 07:44:04 +0000  832 bytes for ./Payload/RACTest.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/RACTest.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2018-02-06 07:44:04 +0000  3997 bytes for ./Payload/RACTest.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+copying file ./Payload/RACTest.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2018-02-06 07:44:04 +0000  258 bytes for ./Payload/RACTest.app/Base.lproj/Main.storyboardc/Info.plist
+copying file ./Payload/RACTest.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+916 bytes for ./Payload/RACTest.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+2018-02-06 07:44:04 +0000  copying file ./Payload/RACTest.app/embedded.mobileprovision ... 
+12341 bytes for ./Payload/RACTest.app/embedded.mobileprovision
+copying file ./Payload/RACTest.app/Info.plist ... 
+2018-02-06 07:44:04 +0000  1135 bytes for ./Payload/RACTest.app/Info.plist
+copying file ./Payload/RACTest.app/PkgInfo ... 
+8 bytes for ./Payload/RACTest.app/PkgInfo
+copying file ./Payload/RACTest.app/RACTest ... 
+2018-02-06 07:44:04 +0000  1256880 bytes for ./Payload/RACTest.app/RACTest
+2018-02-06 07:44:04 +0000  2018-02-06 07:44:04 +0000 [MT] /usr/bin/ditto exited with 0
+
+2018-02-06 07:44:04 +0000  
+2018-02-06 07:44:04 +0000  2018-02-06 07:44:04 +0000 [MT] Processing step: IDEDistributionCreateManifestStep
+
