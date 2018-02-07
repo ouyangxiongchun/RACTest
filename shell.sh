@@ -76,6 +76,9 @@ bundleVersion=$(/usr/libexec/PlistBuddy -c "print CFBundleVersion" ${appInfoPlis
 ipaFullName=iOS_V${bundleShortVersion}_${bundleVersion}_AppStore_$(date +"%Y%m%d")_$(date +"%H%M")_${pakege_mode}
 
 
+#解锁钥匙串
+security unlock-keychain -p "1" ~/Library/Keychains/login.keychain
+
 echo ''
 echo '///-----------'
 echo '/// 正在清理工程'
